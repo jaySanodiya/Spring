@@ -289,7 +289,7 @@ shapes: circle, triangle, rectangle, square,etc.
 logic.
 ● And you have to configure spring IOC for dependency injection
 
-
+Answer :-- file name as DrawShape contains solution
 
 
 
