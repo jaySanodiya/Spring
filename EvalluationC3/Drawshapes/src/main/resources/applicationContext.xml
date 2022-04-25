@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	<bean id="tri" class="com.spring.triangle"/>
+ 	<bean id="cir" class="com.spring.Circle"/>
+ 	<bean id="cyl" class="com.spring.Cylinder"/>
+ 	
+ 	<bean id="d1" class="com.spring.DrawShape">
+ 		<property name="shapes" ref="tri"/>
+ 	</bean>
+ 	
+ 	<bean id="Summation" class="com.spring.calci.Summation"/>
+ 	<bean id="sub" class="com.spring.calci.Subtraction"/>
+ 	<bean id="multi" class="com.spring.calci.Multiplication"/>
+ 	
+ 	<bean id="d2" class="com.spring.calci.PresentationLayer">
+ 		<constructor-arg name="serviceLayer" ref="multi"/>
+ 	</bean>
+ 
+ </beans>
