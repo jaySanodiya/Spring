@@ -5,11 +5,11 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
     https://www.springframework.org/schema/beans/spring-beans.xsd">
  
-	<bean id="tri" class="com.spring.triangle"/>
- 	<bean id="cir" class="com.spring.Circle"/>
- 	<bean id="cyl" class="com.spring.Cylinder"/>
+	<bean id="tri" class="com.spring.DrawShapes.triangle"/>
+ 	<bean id="cir" class="com.spring.DrawShapes.Circle"/>
+ 	<bean id="cyl" class="com.spring.DrawShapes.Cylinder"/>
  	
- 	<bean id="d1" class="com.spring.DrawShape">
+ 	<bean id="d1" class="com.spring.DrawShapes.DrawShape">
  		<property name="shapes" ref="tri"/>
  	</bean>
  	
@@ -20,5 +20,11 @@
  	<bean id="d2" class="com.spring.calci.PresentationLayer">
  		<constructor-arg name="serviceLayer" ref="multi"/>
  	</bean>
+ 
+ 	<bean id="s" class="com.spring.LifeCycle.School" init-method="init" destroy-method="destroy">
+ 		
+ 		<property name="message" value="School is started.."/>
+ 	</bean>
+ 
  
  </beans>

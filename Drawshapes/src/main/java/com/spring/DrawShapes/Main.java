@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.DrawShapes;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

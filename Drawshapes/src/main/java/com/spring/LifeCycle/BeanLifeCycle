@@ -1,0 +1,19 @@
+What are the steps involved in the bean life cycle?
+
+Answer :- 
+	
+	For Ordinary Java class Constructor and finalize methods are life cycle methods which
+	is automatically called by JVM.
+	But for spring, Spring container will control the life cycle method of spring bean class
+	i,e from instantiation to destruction.
+	
+	Bean Life-cycle of a spring bean has 5 stages:-
+	1. Does not exist
+	2. Instantiated
+	3. Initialized
+	4. Service
+	5. Destroy
+	
+	
+	
+	

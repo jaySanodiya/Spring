@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.DrawShapes;
 
 public class Cylinder implements Shapes{
 
